@@ -56,3 +56,16 @@ var list = function (students) {
 };
 
 list(students);
+
+let card = document.querySelector(".card");
+let container = document.querySelector(".container");
+
+container.addEventListener("click", function (e) {
+  if (e.target.classList.contains("card")) {
+    e.target.classList.toggle("active");
+  }
+});
+
+// card.onclick = function () {
+//   card.classList.toggle("active");
+// };
